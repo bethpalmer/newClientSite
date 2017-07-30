@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6, p {
     color: #643513;
 }
 
+/*.white {
+    color: #fff;
+}*/
+
 a {
     color: #bfd030;
 }
@@ -129,6 +133,7 @@ div.circle {
 
 .sr-icons {
     padding-top: 20px;
+    color: #f26621;
 }
 /*.service-box {
     max-width: 400px;
@@ -151,23 +156,96 @@ section.featured-work {
 .work-box {
     background: #fff;
     border: 10px solid #f9f6f3;
-    height: 236px;
-    padding: 0 10px;
-
+    height: 300px;
+    padding: 0;
 }
+
+img.work-display {
+    width: 280px;
+    margin: 40px 10px 0 10px;
+}
+
+.caption {
+    background: rgba(242, 102, 33, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.caption:hover {
+     opacity: 1;
+}
+
+.caption .caption-content {
+    position: absolute;
+    width: 100%;
+    /*height: 20px;*/
+   /* font-size: 16px;*/
+    text-align: center;
+    top: 25%;
+  /*  margin-top: -12px;*/
+   /* color: white;*/
+}
+
+.work-name {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.work-type,
+.read-more {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+}
+
+.work-name,
+.read-more {
+    text-transform: uppercase;
+}
+
+/* TESTIMONIALS */
 
 section.testimonials {
    /* height: 100%;*/
     padding: 20px 0;
-    text-align: center;
+   /* text-align: center;*/
     background: #fff;
 }
 
 .testimonial-box {
     background: #f9f6f3;
     border: 10px solid #fff;
-    height: 200px;
-    padding: 0 30px;
+    height: 340px;
+    padding: 30px 30px;
+}
+
+.testimonial,
+.attrib {
+    text-align: center;
+    margin: 5px 25px;
+}
+
+.speech {
+    color: #bfd030;
+}
+
+i.right {
+    float: right;
+}
+
+hr.quote-divide {
+    width: 150px;
+    border: 0;
+    border-bottom: 1px dashed #bfd030;
+    background: #fff;
 }
 
 footer {
