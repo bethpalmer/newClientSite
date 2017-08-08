@@ -16,10 +16,21 @@ html {
     height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h3, h4, h5, h6 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color: #643513;
+    letter-spacing: 2px;
+}
+
+ h2, p {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     color: #643513;
+}
+
+h3 {
+    font-size: 36px;
 }
 
 /*.white {
@@ -27,11 +38,38 @@ h1, h2, h3, h4, h5, h6, p {
 }*/
 
 a {
-    color: #643513;
+    color: #777;
 }
 a:hover {
-    color: #fff;
+    color: #643513;
 }
+
+.stitched {
+   padding: 20px;
+   margin: 20px;
+   background: #f9f6f3;
+  /* color: #fff;*/
+/*   font-size: 21px;
+   font-weight: bold;
+   line-height: 1.3em;*/
+   border: 3px dashed #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 0 10px #f9f6f3, 2px 1px 10px 8px rgba(10, 10, 0, 0.5);
+/*   text-shadow: -1px -1px #f9f6f3;
+   font-weight: normal;*/
+}
+
+.stitch {
+    border: 3px dashed #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px #f9f6f3, 2px 1px 5px 3px rgba(10, 10, 0, 0.5);
+    padding: 20px;
+   margin: 0 20px;
+   background: #f9f6f3;
+}
+/*body {
+  padding: 10px;
+}*/
 
 /* NAVIGATION */
 
@@ -52,6 +90,10 @@ a:hover {
     }
 }
 
+/*.navbar-custom>li>a {
+    color: #643513;
+}*/
+
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
@@ -64,6 +106,7 @@ a:hover {
 
 ul.navbar-contact li {
     display: inline-block;
+/*    color: #777;*/
 /*    margin: 0 10px;*/
 }
 
@@ -100,14 +143,17 @@ section.intro-section {
 }
 
 .intro-section h1 {
-    font-size: 46px;
+    font-size: 50px;
     font-weight: 700;
     margin: 20px 0 40px 0;
+    color: #f26621;
+    text-shadow: 2px 2px rgba(33, 33, 33, 0.2);
 }
 
 .intro-section h2 {
-    font-size: 20px;
-    letter-spacing: 1px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 27px;
     margin: 0 0 40px 0;
 }
 
@@ -122,8 +168,9 @@ section.about-section {
 
 div.info-box {
     background: #f9f6f3;
-    border: 10px solid #fff;
+   /* border: 10px solid #fff;*/
     height: 350px;
+    width: 28%;
     padding: 0 30px;
 }
 
