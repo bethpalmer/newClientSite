@@ -64,8 +64,23 @@ a:hover {
     border-radius: 5px;
     box-shadow: 0 0 0 5px #f9f6f3, 2px 1px 5px 3px rgba(10, 10, 0, 0.5);
     padding: 20px;
-   margin: 0 20px;
-   background: #f9f6f3;
+    margin: 0 20px;
+    background: #f9f6f3;
+}
+
+.stitch-inverse {
+    border: 3px dashed #f9f6f3;
+    border-radius: 5px;
+   /* box-shadow: 0 0 0 5px #f9f6f3, 2px 1px 5px 3px rgba(10, 10, 0, 0.5);*/
+    padding: 20px;
+    margin: 0 20px;
+    background: #fff;
+}
+
+.stitching {
+    margin: -10px -15px 20px -15px;
+    background-color: #f9f6f3;
+    border-top: 2px dashed #fff;
 }
 /*body {
   padding: 10px;
@@ -135,14 +150,14 @@ of those sections to manage the look and feel of the site. */
 
 /* INTRO */
 
-section.intro-section {
+section.intro {
    /* height: 100%;*/
     padding-top: 120px;
     text-align: center;
     background: #f9f6f3;
 }
 
-.intro-section h1 {
+.intro h1 {
     font-size: 50px;
     font-weight: 700;
     margin: 20px 0 40px 0;
@@ -150,7 +165,7 @@ section.intro-section {
     text-shadow: 2px 2px rgba(33, 33, 33, 0.2);
 }
 
-.intro-section h2 {
+.intro h2 {
     font-size: 18px;
     letter-spacing: 2px;
     line-height: 27px;
@@ -159,7 +174,7 @@ section.intro-section {
 
 /* ABOUT */
 
-section.about-section {
+section.about {
     /*height: 100%;*/
     padding: 40px 0;
     text-align: center;
@@ -210,13 +225,14 @@ section.featured-work {
 
 .work-box {
     background: #fff;
-    border: 10px solid #f9f6f3;
+  /*  border: 10px solid #f9f6f3;*/
     height: 300px;
-    padding: 0;
+    width: 28%;
+    padding: 0 30px;
 }
 
 img.work-display {
-    width: 280px;
+    width: 100%;
     margin: 40px 10px 0 10px;
 }
 
@@ -270,16 +286,17 @@ img.work-display {
 
 section.testimonials {
    /* height: 100%;*/
-    padding: 20px 0;
+    padding: 20px 0 40px 0;
    /* text-align: center;*/
     background: #fff;
 }
 
 .testimonial-box {
     background: #f9f6f3;
-    border: 10px solid #fff;
+    /*border: 10px solid #fff;*/
     height: 340px;
-    padding: 30px 30px;
+    width: 28%;
+    padding: 0 30px;
 }
 
 .testimonial,
