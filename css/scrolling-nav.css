@@ -345,8 +345,22 @@ footer {
 
 section.about-me {
     padding-top: 120px;
-    text-align: center;
+    text-align: left;
     background: #f9f6f3;
+}
+
+.introducing>h1,
+.introducing>h3 {
+    text-align: center;
+}
+
+.introducing>h3 {
+    padding-bottom: 20px;
+}
+
+.introducing>p {
+    letter-spacing: 1px;
+    line-height: 2em;
 }
 
 /* WORK PROJECTS */
