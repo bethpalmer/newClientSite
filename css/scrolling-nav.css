@@ -250,10 +250,12 @@ img.work-display {
     -moz-transition: all ease 0.5s;
 }
 
-.caption:hover {
+.caption:hover,
+.work-caption:hover {
      opacity: 1;
 }
 
+.work-caption-content,
 .caption .caption-content {
     position: absolute;
     width: 100%;
@@ -366,7 +368,7 @@ section.about-me {
     line-height: 2em;
 }
 
-/* WORK PROJECTS */
+/* INDIVIDUAL WORK PROJECTS */
 
 section.project {
     padding-top: 120px;
@@ -379,3 +381,33 @@ h1.title {
 h2.description {
     
 }
+
+/* WORK PROJECTS PAGE */
+
+section.projects {
+    padding-top: 120px;
+    text-align: center;
+    background: #f9f6f3;
+}
+
+.work-item {
+    background: #fff;
+    width: 100%;
+    padding: 30px 0;
+    margin: 10px; 
+}
+
+.work-caption {
+    background: rgba(242, 102, 33, 0.8);
+    position: absolute;
+    top: 18px;
+    left: 34px;
+    width: 90%;
+    height: 88%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+
