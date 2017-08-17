@@ -19,18 +19,34 @@ html {
 h1, h3, h4, h5, h6 {
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
-    color: #643513;
+/*    color: #643513;*/
     letter-spacing: 2px;
 }
 
- h2, p {
+h2, p {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     color: #643513;
 }
 
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #643513;
+}
+
+h2 {
+    font-size: 20px;
+}
+
 h3 {
     font-size: 36px;
+    padding-bottom: 20px;
+    color: #643513;
+}
+
+h5 {
+    font-size: 20px;
 }
 
 /*.white {
@@ -158,8 +174,6 @@ section.intro {
 }
 
 .intro h1 {
-    font-size: 50px;
-    font-weight: 700;
     margin: 20px 0 40px 0;
     color: #f26621;
     text-shadow: 2px 2px rgba(33, 33, 33, 0.2);
@@ -184,9 +198,10 @@ section.about {
 div.info-box {
     background: #f9f6f3;
    /* border: 10px solid #fff;*/
-    height: 350px;
+    height: 420px;
     width: 28%;
     padding: 0 30px;
+    position: relative;
 }
 
 div.info-box h2 {
@@ -203,6 +218,16 @@ div.circle {
 
 .sr-icons {
  /*   padding-top: 10px;*/
+    color: #f26621;
+}
+
+.more {
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    text-align: center;
+}
+a.link {
     color: #f26621;
 }
 /*.service-box {
@@ -241,9 +266,10 @@ img.work-display {
 .caption {
     background: rgba(242, 102, 33, 0.8);
     position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 5px;
+    left: 5px;
+    width: 96%;
+    height: 96%;
     opacity: 0;
     transition: all ease 0.5s;
     -webkit-transition: all ease 0.5s;
@@ -264,7 +290,7 @@ img.work-display {
     text-align: center;
     top: 25%;
   /*  margin-top: -12px;*/
-   /* color: white;*/
+/*    color: white;*/
 }
 
 .work-name {
@@ -378,8 +404,8 @@ section.project {
 h1.title {
 
 }
-h2.description {
-    
+.description {
+    padding-bottom: 30px;    
 }
 
 /* WORK PROJECTS PAGE */
