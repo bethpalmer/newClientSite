@@ -276,11 +276,26 @@ img.work-display {
     -moz-transition: all ease 0.5s;
 }
 
+.caption-carousel:hover,
 .caption:hover,
 .work-caption:hover {
      opacity: 1;
 }
 
+.caption-carousel {
+    background: rgba(242, 102, 33, 0.8);
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    width: 96%;
+    height: 96%;
+    opacity: 0;
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+}
+
+.caption-content-carousel,
 .work-caption-content,
 .caption .caption-content {
     position: absolute;
@@ -406,6 +421,10 @@ h1.title {
 }
 .description {
     padding-bottom: 30px;    
+}
+
+section.other-work {
+    padding: 30px 0;
 }
 
 /* WORK PROJECTS PAGE */
