@@ -462,6 +462,10 @@ section.contact {
     background: #f9f6f3;
 }
 
+.contact {
+    padding-bottom: 20px;
+}
+
 .btn-style {
     background: #f26621;
     border: 1px solid #777;
