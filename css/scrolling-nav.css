@@ -512,7 +512,13 @@ section.about-me {
 
 .introducing>p {
     letter-spacing: 1px;
-    line-height: 2.5em;
+    line-height: 1.8em;
+}
+
+@media (min-width: 768px) {
+    .introducing>p {
+        line-height: 2.5em;
+    }
 }
 
 .cta {
@@ -589,6 +595,28 @@ section.projects {
     transition: all ease 0.5s;
     -webkit-transition: all ease 0.5s;
     -moz-transition: all ease 0.5s;
+}
+
+img.work-example {
+    width: 200px;
+}
+
+@media (min-width: 500px) {
+    img.work-example {
+        width: 290px;
+    }
+}
+
+@media (min-width: 768px) {
+    img.work-example {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    img.work-example {
+        width: 290px;
+    }
 }
 
 /* CONTACT FORM */
