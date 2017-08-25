@@ -146,6 +146,15 @@ ul.navbar-contact li {
 /*    margin: 0 10px;*/
 }
 
+@media (max-width: 767px) {
+    .navbar-nav {
+        float: left;
+    }
+    .navbar-contact {
+        float: right;
+    }
+}
+
 div.logo {
     height: 124px;
     width: 125px;
@@ -179,16 +188,27 @@ section.intro {
 }
 
 .intro h1 {
+    font-size: 36px;
     margin: 20px 0 40px 0;
     color: #f26621;
     text-shadow: 2px 2px rgba(33, 33, 33, 0.2);
 }
 
 .intro h2 {
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
     line-height: 27px;
     margin: 0 0 40px 0;
+}
+
+@media (min-width: 768px) {
+    .intro h1 {
+        font-size: 50px;
+    }
+    .intro h2 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
 }
 
 /* ABOUT */
@@ -354,9 +374,25 @@ img.work-display {
     /*height: 20px;*/
    /* font-size: 16px;*/
     text-align: center;
-    top: 25%;
+    top: 7%;
   /*  margin-top: -12px;*/
 /*    color: white;*/
+}
+
+@media (min-width: 992px) {
+    .caption-content-carousel,
+    .work-caption-content,
+    .caption .caption-content {
+        top: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .caption-content-carousel,
+    .work-caption-content,
+    .caption .caption-content {
+        top: 25%;
+    }
 }
 
 .cap-link:hover {
@@ -383,6 +419,8 @@ img.work-display {
 .read-more {
     text-transform: uppercase;
 }
+
+
 
 /* TESTIMONIALS */
 
@@ -493,10 +531,22 @@ section.project {
 }
 
 h1.title {
-
+    font-size: 36px;
 }
 .description {
+    font-size: 16px;
+    line-height: 24px;
     padding-bottom: 30px;    
+}
+
+@media (min-width: 768px) {
+    h1.title {
+        font-size: 50px;
+    }
+    .description {
+        font-size: 20px;
+        line-height: 24px;
+    }
 }
 
 section.other-work {
@@ -505,6 +555,12 @@ section.other-work {
 
 .weblink {
     margin: 40px 0;
+}
+
+@media (max-width: 600px) {
+    .other-work {
+        display: none;
+    }
 }
 
 /* WORK PROJECTS PAGE */
