@@ -88,9 +88,14 @@ a:hover {
     border: 3px dashed #f9f6f3;
     border-radius: 5px;
     box-shadow: inset 0 0 0 5px #f9f6f3;
-    padding: 20px;
     margin: 0 20px;
     background: #fff;
+}
+
+@media (min-width: 768px) {
+    .stitch-inverse {
+        padding: 20px;
+    }
 }
 
 .stitching {
@@ -190,19 +195,53 @@ section.intro {
 
 section.about {
     /*height: 100%;*/
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     text-align: center;
     background: #fff;
 }
 
+@media (min-width: 768px) {
+    section.about {
+        padding: 40px 0;
+    }
+}
+
 div.info-box {
     background: #f9f6f3;
-   /* border: 10px solid #fff;*/
-    height: 420px;
-    width: 28%;
-    padding: 0 30px;
     position: relative;
+    height: 430px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding: 0 20px;
 }
+
+@media (min-width: 450px) {
+    div.info-box {
+        height: 380px;
+    }
+}
+
+@media (min-width: 768px) {
+    div.info-box {
+        height: 470px;
+        width: 27%;
+        padding: 0 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 992px) {
+   div.info-box {
+        height: 420px;
+        width: 28%;
+        padding: 0 30px;
+    } 
+}
+ 
 
 div.info-box h2 {
     margin-bottom: 20px;
@@ -219,14 +258,17 @@ div.circle {
 .sr-icons {
  /*   padding-top: 10px;*/
     color: #f26621;
+    margin-top: 20px;
 }
 
 .more {
     position: absolute;
     bottom: 20px;
-    width: 80%;
+    left: 0;
+    width: 100%;
     text-align: center;
 }
+
 a.link {
     color: #f26621;
 }
@@ -251,11 +293,20 @@ section.featured-work {
 .work-box {
     background: #fff;
   /*  border: 10px solid #f9f6f3;*/
-    height: 240px;
-    width: 28%;
-    padding: 0 30px;
+    height: 200px;
+    width: 27%;
+    padding-right: 20px;
    /* margin-top: 30px;*/
     margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .work-box {
+        height: 240px;
+        width: 28%;
+        padding: 0 30px;
+/*        margin-bottom: 20px;*/
+    }
 }
 
 img.work-display {
@@ -344,10 +395,17 @@ section.testimonials {
 
 .testimonial-box {
     background: #f9f6f3;
-    /*border: 10px solid #fff;*/
-    height: 340px;
-    width: 28%;
-    padding: 0 30px;
+    height: 440px;
+    width: 27%;
+    padding: 0 20px;
+}
+
+@media (min-width: 992px) {
+   .testimonial-box {
+        height: 340px;
+        width: 28%;
+        padding: 0 30px;
+    } 
 }
 
 .testimonial,
