@@ -217,6 +217,23 @@ section.intro {
     }
 }
 
+img.desktop {
+    display: none;
+}
+
+img.mobile {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    img.desktop {
+        display: block;
+    }
+    img.mobile {
+        display: none;
+    }
+}
+
 /* ABOUT */
 
 section.about {
