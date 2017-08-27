@@ -659,9 +659,16 @@ h1.title {
     }
 }
 
-section.other-work {
-    padding: 30px 0;
+@media (min-width: 601px) {
+    section.other-work {
+        padding: 30px 0;
+    }
+    .work-link {
+        display: none;
+    }
 }
+
+
 
 .weblink {
     margin: 40px 0;
@@ -670,6 +677,9 @@ section.other-work {
 @media (max-width: 600px) {
     .other-work {
         display: none;
+    }
+    .work-link {
+        display: block;
     }
 }
 
