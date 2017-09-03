@@ -183,8 +183,12 @@
 	 * Default options for the carousel.
 	 * @public
 	 */
+
+	var no_of_items = 3;
+
+
 	Owl.Defaults = {
-		items: 3,
+		items: no_of_items,
 		loop: false,
 		center: false,
 		rewind: false,

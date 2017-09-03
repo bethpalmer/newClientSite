@@ -110,8 +110,8 @@
             </div>
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
-                <div class="owl-carousel owl-theme">
-                      <div>
+                <div id="owl-demo" class="owl-carousel owl-theme">
+                      <div class="item">
                           <div class="caption-carousel">
                               <div class="caption-content-carousel">
                                   <h4 class="work-name">Shehzad Farrukh Accountants</h4>
@@ -123,7 +123,7 @@
                          <img class="work-display" src="../img/sfaca/sf-display.jpg" alt="SFACA Website load page displayed on iMac screen and iphone screen">
                       </div>
 
-                        <div>
+                        <div class="item">
                           <div class="caption-carousel">
                               <div class="caption-content-carousel">
                                  <h4 class="work-name">Essential Blends</h4>
@@ -135,7 +135,7 @@
                          <img class="work-display" src="../img/essential_blends/eb-display.jpg" alt="Essential Blends Website load page displayed on iMac screen and iphone screen">
                       </div>
 
-                        <div>
+                        <div class="item">
                           <div class="caption-carousel">
                               <div class="caption-content-carousel">
                                  <h4 class="work-name">Mondays Child UK</h4>
@@ -147,7 +147,7 @@
                          <img class="work-display" src="../img/mondays_child/mc-display.jpg" alt="Monday's Child Website load page displayed on iMac screen and iphone screen">
                       </div>
 
-                      <div>
+                      <div class="item">
                           <div class="caption-carousel">
                               <div class="caption-content-carousel">
                                  <h4 class="work-name">Door 2 Door Coaches</h4>
@@ -171,7 +171,7 @@
                          <img class="work-display" src="../img/awesome_brighton/ab-display.jpg" alt="Awesome Brighton Website load page displayed on iMac screen and iphone screen">
                       </div> -->
 
-                      <div>
+                      <div class="item">
                           <div class="caption-carousel">
                               <div class="caption-content-carousel">
                                  <h4 class="work-name">Harmony Vineyard</h4>
@@ -183,7 +183,7 @@
                          <img class="work-display" src="../img/harmony_vineyard/hv-display.jpg" alt="Harmony Vineyard logo displayed on business cards, 2 colour variations on 2 separate business cards">
                       </div>
 
-                      <div>
+                      <div class="item">
                           <div class="caption-carousel">
                               <div class="caption-content-carousel">
                                  <h4 class="work-name">Online CV</h4>
@@ -196,16 +196,6 @@
                       </div>
 
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="work-link">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-10 col-sm-offset-1 text-left">
-                <a href="../work.html"><h4 class="orange">See more work</h4></a>
               </div>
             </div>
           </div>
@@ -255,7 +245,14 @@
 
     <!-- Owl Carousel JS -->
     <script src="../js/owl.carousel.min.js"></script>
-    <script>$(document).ready(function(){$('.owl-carousel').owlCarousel();});</script>
+    <script>$(document).ready(function(){$('.owl-carousel').owlCarousel(
+      {responsive:
+        {
+          0:{items:1},
+          600:{items:3}
+        }
+      });
+    });</script>
 
 </body>
 
