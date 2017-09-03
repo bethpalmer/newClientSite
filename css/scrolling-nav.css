@@ -250,7 +250,11 @@ img.mobile {
 .btn-custom:active {
     background: #4faeb5;
     color: #fff;
-    box-shadow: 0 2px rgba(33, 33, 33, 0.2);
+    box-shadow: 2px 2px rgba(225, 225, 225, 1);
+}
+
+.summary-text {
+    margin-bottom: 30px;
 }
 
 /* ABOUT */
