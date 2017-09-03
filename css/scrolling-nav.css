@@ -239,7 +239,10 @@ img.mobile {
 }
 
 .btn-custom {
-    margin-bottom: 30px;
+    font-family:  'Amatic SC', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 30px 0;
     background: #5bc6cd;
     color: #fff;
     border-radius: 20px;
@@ -414,9 +417,9 @@ div.circle {
     text-align: center;
 }
 
-a.link {
+/*a.link {
     color: #f26621;
-}
+}*/
 /*.service-box {
     max-width: 400px;
     margin: 50px auto 0;
