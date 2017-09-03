@@ -245,6 +245,7 @@ img.mobile {
     letter-spacing: 2px;
     margin: 30px 0;
     background: #5bc6cd;
+    border: 1px solid #8ee7ed;
     color: #fff;
     border-radius: 20px;
     box-shadow: 2px 2px rgba(33, 33, 33, 0.2);
@@ -253,6 +254,7 @@ img.mobile {
 .btn-custom:hover,
 .btn-custom:active {
     background: #4faeb5;
+    border: 1px solid #5bc6cd;
     color: #fff;
     box-shadow: 2px 2px rgba(225, 225, 225, 1);
 }
@@ -407,7 +409,6 @@ div.circle {
 .sr-icons {
  /*   padding-top: 10px;*/
     color: #f26621;
-    margin-top: 20px;
 }
 
 .more {
@@ -418,9 +419,13 @@ div.circle {
     text-align: center;
 }
 
-/*a.link {
+a.link {
     color: #f26621;
-}*/
+}
+
+a.link:visited {
+    color: #f26621;
+}
 /*.service-box {
     max-width: 400px;
     margin: 50px auto 0;
