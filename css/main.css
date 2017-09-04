@@ -749,15 +749,15 @@ h1.title {
     margin: 50px;
 }
 
-img.desktop {
+.desktop {
     display: none;
 }
 
 @media (min-width: 768px) {
-    img.desktop {
+    .desktop {
         display: block;
     }
-    img.mobile {
+    .mobile {
         display: none;
     }
 }
