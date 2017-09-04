@@ -749,6 +749,19 @@ h1.title {
     margin: 50px;
 }
 
+img.desktop {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    img.desktop {
+        display: block;
+    }
+    img.mobile {
+        display: none;
+    }
+}
+
 /*@media (max-width: 600px) {
     .other-work {
         display: none;
