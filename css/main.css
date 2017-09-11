@@ -49,15 +49,16 @@ h5 {
     font-size: 20px;
 }
 
-/*.white {
-    color: #fff;
-}*/
-
 a {
     color: #777;
 }
 a:hover {
     color: #643513;
+    text-decoration: none;
+}
+a:visited,
+a:focus {
+    text-decoration: none;
 }
 
 .stitched {
@@ -404,6 +405,22 @@ div.circle {
     width: 100px;
     margin: 20px auto;
     border-radius: 50px;
+    transition: border-radius 300ms ease-in-out;
+}
+
+a.know-more:hover div.circle {
+    border-radius: 20px;
+}
+
+a.know-more:hover h5.more {
+    text-decoration: underline;
+}
+a.know-more:hover h1 {
+    text-decoration: none;
+}
+
+p.summary {
+    text-decoration: none;
 }
 
 .sr-icons {
@@ -420,18 +437,20 @@ div.circle {
 .more {
     position: absolute;
     bottom: 20px;
-    left: 0;
-    width: 100%;
+    left: 25%;
+    width: 50%;
     text-align: center;
+    color: #f26621;
+/*    border: 2px dashed #fff;*/
 }
 
-a.link {
+/*a.link {
     color: #f26621;
-}
+}*/
 
-a.link:visited {
+/*a.link:visited {
     color: #f26621;
-}
+}*/
 /*.service-box {
     max-width: 400px;
     margin: 50px auto 0;
