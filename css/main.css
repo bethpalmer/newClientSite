@@ -415,7 +415,8 @@ a.know-more:hover div.circle {
 
 a.know-more:hover h5.more {
   /*  text-decoration: underline;*/
-    color: #643513;
+    /*color: #643513;*/
+    font-size: 20px;
 }
 a.know-more:hover h1 {
     text-decoration: none;
@@ -443,6 +444,8 @@ p.summary {
     width: 50%;
     text-align: center;
     color: #f26621;
+    font-size: 17px;
+    transition: font-size 300ms ease-in-out;
 /*    border: 2px dashed #fff;*/
 }
 
