@@ -414,7 +414,8 @@ a.know-more:hover div.circle {
 }
 
 a.know-more:hover h5.more {
-    text-decoration: underline;
+  /*  text-decoration: underline;*/
+    color: #643513;
 }
 a.know-more:hover h1 {
     text-decoration: none;
