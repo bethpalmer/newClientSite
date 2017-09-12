@@ -405,11 +405,12 @@ div.circle {
     width: 100px;
     margin: 20px auto;
     border-radius: 50px;
-    transition: border-radius 300ms ease-in-out;
+    transition: border-radius 300ms ease-in-out border 300ms ease-in-out;
 }
 
 a.know-more:hover div.circle {
     border-radius: 20px;
+    border: 3px dashed #fff;
 }
 
 a.know-more:hover h5.more {
