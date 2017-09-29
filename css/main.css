@@ -741,6 +741,10 @@ footer {
     line-height: 45px;
 }
 
+.btn-social:hover {
+    border: 1px dashed #643513;
+}
+
 .copyright {
     margin-top: 20px;
 }
