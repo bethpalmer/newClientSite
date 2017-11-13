@@ -322,6 +322,50 @@ img.mobile {
     box-shadow: 2px 2px rgba(225, 225, 225, 1);
 }
 
+.btn-white {
+    background: #fff;
+    font-family:  'Amatic SC', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    border: 1px dashed #f26621;
+    color: #f26621;
+    border-radius: 20px;
+    box-shadow: 2px 2px rgba(33, 33, 33, 0.2);
+    padding: 0 0;
+   /* opacity: 0.8;*/
+   /* animation: cta 1s ease-in-out 1.6s 1 normal forwards;*/
+}
+
+.btn-white:hover,
+.btn-white:active {
+    background: transparent;
+  /*  opacity: 0.95;*/
+    color: #f26621;
+    box-shadow: -1px -1px rgba(33, 33, 33, 0.2);
+}
+
+.btn-orange {
+    font-family:  'Amatic SC', cursive;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    background: #f26621;
+    border: 1px dashed #fff;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px rgba(33, 33, 33, 0.2);
+    opacity: 0.8;
+/*    animation: cta 1s ease-in-out 1.6s 1 normal forwards;*/
+}
+
+.btn-orange:hover,
+.btn-orange:active {
+    opacity: 0.95;
+    color: #fff;
+/*    box-shadow: -1px -1px rgba(33, 33, 33, 0.2);*/
+}
+
 .summary-text {
     margin-bottom: 30px;
 }
@@ -330,7 +374,7 @@ img.mobile {
 
 section.about {
     /*height: 100%;*/
-    padding: 40px 0 0 0;
+/*    padding-bottom: 40px;*/
     text-align: center;
     background: #fff;
 }
@@ -341,7 +385,7 @@ section.about {
 
 @media (min-width: 768px) {
     section.about {
-        padding: 40px 0;
+        padding-bottom: 40px;
     }
 }
 
@@ -455,7 +499,7 @@ div.info-box {
 @media (min-width: 992px) {
     .work-box {
         height: 240px;
-        width: 28%;
+        width: 29%;
         padding: 0 30px;
         margin: 0 20px 20px 20px;
     }
@@ -474,6 +518,15 @@ div.circle {
     transition: border-radius 300ms ease-in-out border 300ms ease-in-out;
 }
 
+/*@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}*/
+
 a.know-more:hover div.circle {
     border-radius: 20px;
     border: 3px dashed #fff;
@@ -487,6 +540,11 @@ a.know-more:hover h5.more {
 a.know-more:hover h1 {
     text-decoration: none;
 }
+
+/*i.icon {
+    rotate: 0deg;
+    transition: spin 300ms ease-in-out;
+}*/
 
 p.summary {
     text-decoration: none;
@@ -509,9 +567,9 @@ p.summary {
     left: 25%;
     width: 50%;
     text-align: center;
-    color: #f26621;
+    /*color: #f26621;
     font-size: 17px;
-    transition: font-size 300ms ease-in-out;
+    transition: font-size 300ms ease-in-out;*/
 /*    border: 2px dashed #fff;*/
 }
 
