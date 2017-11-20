@@ -230,36 +230,120 @@ section#services {
     margin-top: 130px;
 }
 
+.folder-tab {
+    width: 29%;
+    display: inline-block;
+    height: 130px;
+}
+
+.folder-tabs {
+    z-index: -5;
+    position: absolute;
+    top: 0;
+    width: 97%;
+    color: #643513;
+}
+
+.folder-content {
+    margin-top: -29px;
+    height: 400px;
+    z-index: -1;
+    position: absolute;
+    top: 175px;
+    left: -5px;
+    width: 97%;
+}
+
+/*************/
+
+.tabs-wrapper {
+    z-index: 666;
+}
+
 .tab-header {
+    position: relative;
+  /*  top: 50px;*/
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
     letter-spacing: 2px;
     font-size: 30px;
     padding: 0;
     margin: 0 0 30px;
-    color: #643513;
     font-style: none;
+    /*z-index: -5;*/
+}
+
+.nav-item {
+    width: 32.7%;
+    z-index: 998;
+/*    margin-left: 14px;*/
+/*    margin-left: 0;
+    border-bottom: transparent;
+    box-shadow: 0 0 0 12px #f9f6f3, 5px 8px 0px 2px rgba(10, 10, 0, 0.5);
+    background: rgba(249, 246, 243, 0.5);*/
+}
+
+.nav-tabs {
+    border-bottom: none;
 }
 
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover {
-    background: transparent;
-    border: none; 
+    background: #f9f6f3;
+    border: none;
+    padding: 20px;
+    margin: 20px 6px;
+    background: #f9f6f3;
+    border: 3px dashed #fff;
+    border-radius: 5px;
+    border-bottom: transparent;
+   /* box-shadow: 0 0 0 10px #f9f6f3, 2px 1px 10px 8px rgba(10, 10, 0, 0.5);*/
 }
 
-.tab-content.stitched {
-    margin: 0;
-    z-index: 990;
+.nav-tabs>li.active,
+.nav-tabs>li.active,
+.nav-tabs>li.active {
+    /*border: solid 20px transparent;*/
+    margin-left: 23px;
+    width: 30%;
+    border-radius: 4px 4px 0 0;
+/*    background-color: #f9f6f3;*/
+}
+
+.tab-content {
+  /*  margin: 0;*/
+    z-index: 998;
 }
 
 .nav-item {
-/*    z-index: -5;*/
-    margin-left: 0;
-    border-bottom: transparent;
-    box-shadow: 0 0 0 10px #f9f6f3, 10px 8px 0px 2px rgba(10, 10, 0, 0.5);
+/*    margin-left: 0;
+*//*    border-bottom: transparent;
+    box-shadow: 0 0 0 12px #f9f6f3, 5px 8px 0px 2px rgba(10, 10, 0, 0.5);
+    background: rgba(249, 246, 243, 0.5);  */ 
 }
 
+/*li.nav-item.active>a {
+    margin-top: -10px;
+}*/
+
+li.nav-item>a {
+    margin-top: 15px;
+}
+
+li.nav-item.active {
+/*    border: none;
+    background: transparent;*/
+}
+li.nav-item>a.nav-link:hover {
+    margin-top: 15px;
+}
+
+.nav>li>a:hover {
+    border: none!important;
+    margin: 0;
+    background: #f9f6f3;
+}
 /*
 .dropdown-toggle {
     color: #643513;
