@@ -228,6 +228,13 @@ ul.navbar-contact>li>a:hover {
 p.note {
     margin-top: 40px;
 }
+
+ul.basicplus {
+    list-style: none;
+}
+p.asterix {
+    margin-left: 25px;
+}
 /*
 div.price {
     padding: 10px;
@@ -240,9 +247,13 @@ div.price {
     margin-bottom: none;
 }*/
 
-ol.web-design>li {
+ol.services>li {
     padding: 10px 0;
 }
+
+/*i.plus {
+    margin: auto;
+}*/
 
 .support-box {
     background: #f9f6f3;
@@ -268,7 +279,7 @@ ol.web-design>li {
 @media (min-width: 768px) {
     .support-box {
         height: 480px;
-        width: 27%;
+        width: 45%;
      /*   padding: 0 20px;*/
         margin: 0 20px;
     }
@@ -276,8 +287,8 @@ ol.web-design>li {
 
 @media (min-width: 992px) {
    .support-box {
-        height: 525px;
-        width: 29%;
+        height: 340px;
+        width: 45%;
      /*   padding: 0 30px;*/
     } 
 }
@@ -655,6 +666,9 @@ img.mobile {
     color: #fff;
     border-radius: 20px;
     box-shadow: 2px 2px rgba(33, 33, 33, 0.2);
+}
+
+.btn-animation {
     opacity: 0;
     animation: cta 1s ease-in-out 1.6s 1 normal forwards;
 }
@@ -1179,6 +1193,10 @@ footer {
 .copyright {
     margin-top: 20px;
 }
+
+/*section.title {
+    padding: 110px 0 20px 0;
+}*/
 
 /* ABOUT PAGE */
 
