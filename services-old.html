@@ -25,7 +25,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -73,16 +73,80 @@
         <!-- /.container -->
     </nav>
 
-    <section class="about-me stitched">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <div class="col-sm-12 col-md-10 col-md-offset-1">
-                        <h1 class="text-center">Services</h1>
-                        <h3 class="orange text-center">Website Design</h3> 
+    <section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3 class="">Services</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- <div class="folder-tab-wrapper"> -->
+                    <!-- Create the actual tabs (not with info) -->
+                <div class="folder-tabs text-center">  
+                    <div class="folder-tab stitched"></div>
+
+                    <div class="folder-tab stitched"></div>
+
+                    <div class="folder-tab stitched"></div>
+                </div>
+             <!--    </div> -->
+                <div class="folder-content stitched"></div>
+                
+                <div class="tabs-wrapper">
+                    <ul class="nav nav-tabs text-center" role="tablist">  
+                        <li class="nav-item active">
+                            <a class="nav-link" data-toggle="tab" role="tab" href="#graphics">
+                                <i class="fa fa-4x fa-pencil icon"></i>
+                                <h3 class="tab-header sr-icons">Graphic Design</h3>
+                            </a> 
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" role="tab" href="#web-design">
+                                <i class="fa fa-4x fa-laptop icon"></i>
+                                <h3 class="tab-header sr-icons">Website Design</h3>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" role="tab" href="#support">
+                                <i class="fa fa-4x fa-life-ring icon"></i>
+                                <h3 class="tab-header sr-icons">Web Support</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content card">
+                    <div class="tab-pane fade in active" role="tabpanel" id="graphics">
+                      <h3 class="">Graphic Design</h3>
+                      
+                      <ul class="">
+                        <li>
+                            <p class="text-light">Some info about Graphic Design</p>
+                        </li>
+                        <li>
+                            <h4>Process</h4>
+                            <p class="text-lighter">What you can expect</p>
+                        </li>
+                        <li><h4>Key Information</h4>
+                            <p class="text-lighter">Link to a form about branding</p>
+                        </li>
+                        <li><h4>Something else</h4>
+                            <p class="text-lighter">Explained in more detail</p>
+                        </li>
+                        <li class=""><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i><a href="#services"> Back to Services</a></li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" role="tabpanel" id="web-design">
+               <!--        <h3 class="service">Website Design</h3> -->
+                      <h3 class="orange">Web Design</h3>
                         <p>Your website is the corner stone of your online presence. It needs to legitimise and effectively market your business to new customers as well as providing all of the useful information your customers expect in a user friendly way.</p>
                         <p>I work on a case by case basis when it comes to web design, after all, the most important thing about your site is that it tailored to suit you and your specific needs and business targets. However, the workflow that underpin all web development projects is the same.</p>
-                        <ol class="web-design">
+                        <ol>
                             <li>Getting to know you and your business, your goals, your target market and USPs</li>
                             <li>Getting to know your market, any design trends, identifying what works, and where you can deviate from the norm to create a product which really stand out.</li>
                             <li>Agree the broad spectrum content, layout, visuals and theme and then get cracking with the development work.</li>
@@ -93,118 +157,48 @@
                         <p>Once the product has been developed, a single round of feedback should enable us to finalise a product which is beautifully effective in achieving its goals.</p>
                         <p>Projects start from as little as £100/page depending on the requirements. I ask for 25% of the project payment upfront, and the rest either in instalments (depending on the length of the project) or on completion, prior to facilitating hosting for the site.</p>
                         <p>My hourly rate is reduced from £40/hr to £25/hr for those who sign up for a subsequent hosting and support contract.</p>
+                        <!-- TODO Add link to hosting and support contracts -->
+                        <a href="#services"> Back to Services</a>
                     </div>
-                    <div class="col-sm-12 text-center">
-                        <h5 class="cta-intro">Got a project in mind?</h5>
-                        <a type="button" href="mailto:bethpalmerdesigns@gmail.com" class="btn btn-custom text-uppercase">Get in touch</a>
-                    </div>   
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials">
-        <!-- SLIDING HORITONTAL CAROUSEL? Or layout a few here... initially? -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h3>Web Support</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10 col-offset-1 col-sm-12 col-lg-10 col-lg-offset-1">
-                    <div class="col-12 col-sm-4 support-box stitch">
-                       <!--  <i class="fa fa-2x fa-quote-left speech"></i> -->
-                       <h3 class="orange text-center">Basic<br>Hosting</h3>
+                    <div class="tab-pane fade" role="tabpanel" id="support">
+                      <h3 class="service">Web Support</h3>
+                      <h6>Basic Support - £80</h6>
                         <ol>
-                            <li>Secure hosting environment</li>
-                            <li>Provision of one domain email address *</li>
-                            <li>Management of domain name registration</li>
+                            <li>Secure hosting and hosting support</li>
+                            <li>Provision of one domain email address* and support</li>
+                            <li>Necessary updates of core and modules</li>
                         </ol>
-                        <div class="price">
-                            <p class="price more text-center">£49pcm</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4 support-box stitch">
-                        <!-- <i class="fa fa-2x fa-quote-left speech"></i> -->
-                        <h3 class="orange text-center">Standard<br>Support</h3>
+                        <h6>Mid level Support - £180</h6>
                         <ol>
-                            <li>Secure hosting environment</li>
-                            <li>Provision of one domain email address *</li>
-                            <li>Management of domain name registration</li>
-                            <li>Necessary updates of integrated core and modules</li>
+                            <li>Secure hosting and hosting support</li>
+                            <li>Provision of one domain email address* and support</li>
+                            <li>Necessary updates of core and modules</li>
                             <li>Up to 2 hours of updates to supported systems including website and database</li>
                             <li>New content optimisation</li>
                             <li>Monthly backups</li>
                         </ol>
-                        <div class="price">
-                            <p class="price more text-center">£169pcm</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-4 support-box stitch">
-                        <!-- <i class="fa fa-2x fa-quote-left speech"></i> -->
-                        <h3 class="orange text-center">Advanced<br>Support</h3>
+                        <h6>High level Support - £250</h6>
                         <ol>
-                            <li>Secure hosting environment</li>
-                            <li>Provision of one domain email address *</li>
-                            <li>Management of domain name registration</li>
-                            <li>Necessary updates of integrated core and modules</li>
+                            <li>Secure hosting and hosting support</li>
+                            <li>Provision of one domain email address* and support</li>
+                            <li>Necessary updates of core and modules</li>
                             <li>Up to 2 hours of updates to supported systems including website and database</li>
                             <li>New content optimisation</li>
-                            <li>Weekly backups</li>
+                            <li>Weekly Backups</li>
                             <li>Monthly link check</li>
                             <li>Quarterly page speed reports</li>
                             <li>Annual Google analytics analysis and report</li>
                         </ol>
-                        <div class="price">
-                            <p class="price more text-center">£249pcm</p>
-                        </div>
+                        <p>*Additional email addresses available for additional £10 per email address</p>
+                        <a href="#services"> Back to Services</a>
                     </div>
-                    <div class="col-sm-12 text-center">
-                        <h5 class="cta-intro">Got a project in mind?</h5>
-                        <a type="button" href="mailto:bethpalmerdesigns@gmail.com" class="btn btn-custom text-uppercase">Get in touch</a>
-                    </div>   
-                </div>
-            </div>
-            <div class="row">
-               <div class="col-12">
-                    <p class="note text-center">* Additional email addresses available for £10 per email address</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="stitched">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <div class="col-sm-12 col-md-10 col-md-offset-1">
-                        <h3 class="orange text-center">Graphic Design</h3> 
-                        <p>Your website is the corner stone of your online presence. It needs to legitimise and effectively market your business to new customers as well as providing all of the useful information your customers expect in a user friendly way.</p>
-                        <p>I work on a case by case basis when it comes to web design, after all, the most important thing about your site is that it tailored to suit you and your specific needs and business targets. However, the workflow that underpin all web development projects is the same.</p>
-                        <ol>
-                            <li>Getting to know you and your business, your goals, your target market and USPs</li>
-                            <li>Getting to know your market, any design trends, identifying what works, and where you can deviate from the norm to create a product which really stand out.</li>
-                            <li>Agree the broad spectrum content, layout, visuals and theme and then get cracking with the development work.</li>
-                        </ol>
-                        <p>Communication is is a really crucial element to good design which is why the planning process is so important. It’s important to me that we are both comfortable to challenge each other on content and design decisions to ensure that together we create the best possible product for your customers.</p>
-                        <p>As a keen copywriter I am likely to recommend content edits and formatting in line with proven marketing principles and effective layout as it has proven to be very helpful on many projects for clients to receive subjective feedback on website content.</p>
-                        <p>I normally recommend a bespoke system, including a Perch CMS to allow you to make edits independently, or alternatively I can work on a platform like wordpress where needed.</p>
-                        <p>Once the product has been developed, a single round of feedback should enable us to finalise a product which is beautifully effective in achieving its goals.</p>
-                        <p>Projects start from as little as £100/page depending on the requirements. I ask for 25% of the project payment upfront, and the rest either in instalments (depending on the length of the project) or on completion, prior to facilitating hosting for the site.</p>
-                        <p>My hourly rate is reduced from £40/hr to £25/hr for those who sign up for a subsequent hosting and support contract.</p>
-                    </div>
-                    <div class="col-sm-12 text-center">
-                        <h5 class="cta-intro">Got a project in mind?</h5>
-                        <a type="button" href="mailto:bethpalmerdesigns@gmail.com" class="btn btn-custom text-uppercase">Get in touch</a>
-                    </div>   
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="testimonials">
+    <section class="testimonials services">
         <!-- SLIDING HORITONTAL CAROUSEL? Or layout a few here... initially? -->
         <div class="container">
             <div class="row">
@@ -230,7 +224,7 @@
                     </div>
                     <div class="col-12 col-sm-4 testimonial-box stitch">
                         <i class="fa fa-2x fa-quote-left speech"></i>
-                        <p class="testimonial">Beth was really great to communicate with and understood just what my business needs to stand out. She worked swiftly and I am very happy with result. I wouldn't hesistate to recommend her services.</p>
+                        <p class="testimonial">Beth was really great to communicate with and understood just what my business needs to stand out. She worked swiftly and I am very happy with the result. I wouldn't hesistate to recommend her services.</p>
                         <i class="fa fa-2x fa-quote-right speech right"></i>
                         <hr class="quote-divide">
                         <p class="attrib">Sophie Joseph<br>Essential Blends</p>
