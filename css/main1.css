@@ -513,7 +513,8 @@ div.logo {
 }
 
 .logo:hover {
-    background: url(../img/logo-hover.png)
+    background: url(../img/logo-hover.png);
+    z-index: 999;
 }
 
 /*.nav>li>a:hover {
@@ -844,6 +845,7 @@ div.info-box {
         height: 330px;
         width: 29%;
         padding: 0 30px;
+        margin-bottom: 40px;
     } 
 }
 
