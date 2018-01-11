@@ -63,17 +63,13 @@ a:focus {
 
 .stitched {
    padding: 20px;
-   margin: 20px;
+   margin: 20px auto;
    background: #f9f6f3;
-  /* color: #fff;*/
-/*   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;*/
    border: 3px dashed #fff;
    border-radius: 5px;
    box-shadow: 0 0 0 10px #f9f6f3, 2px 1px 10px 8px rgba(10, 10, 0, 0.5);
-/*   text-shadow: -1px -1px #f9f6f3;
-   font-weight: normal;*/
+   width: 96%;
+   max-width: 1240px;
 }
 
 .stitch {
@@ -257,30 +253,32 @@ ol.services>li {
 
 .support-box {
     background: #f9f6f3;
-    height: 320px;
+    height: 350px;
     font-size: 11px;
-    width: 70%;
+    width: 90%;
     margin: 0 auto 40px auto;
    /* padding: 0 20px;*/
 }
 
 @media (min-width: 400px) {
     .support-box {
-        font-size: 14px;
-        height: 310px;
+        font-size: 12px;
+        height: 375px;
+        width: 80%;
     }
 }
 @media (min-width: 450px) {
     .support-box {
-        height: 290px;
+        font-size: 14px;
+        height: 375px;
+        width: 80%;
     }
 }
 
 @media (min-width: 768px) {
     .support-box {
-        height: 480px;
-        width: 45%;
-     /*   padding: 0 20px;*/
+        height: 400px;
+        width: 44%;
         margin: 0 20px;
     }
 }
@@ -305,6 +303,9 @@ section.web-support {
 }
 section.graphic-design {
     margin-top: 30px;
+}
+div.extra-top {
+    margin-top: 20px;
 }
 
 
@@ -685,10 +686,10 @@ img.mobile {
     animation: cta 1s ease-in-out 1.6s 1 normal forwards;
 }
 
-.btn-index {
+/*.btn-index {
     margin-top: 30px;
 }
-
+*/
 .btn-custom:hover,
 .btn-custom:active {
     background: #4faeb5;
@@ -768,9 +769,9 @@ img.profile {
   /*  text-align: center;*/
 }
 
-.cta-intro {
+/*.cta-intro {
     padding-top: 20px;
-}
+}*/
 
 @media (min-width: 768px) {
     section.about {
