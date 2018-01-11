@@ -293,6 +293,19 @@ ol.services>li {
     } 
 }
 
+/*#web-support {
+    height: 100px;
+}*/
+/*#graphic-design {
+    height: 70px;
+}*/
+
+section.web-support {
+    margin-top: 60px;
+}
+section.graphic-design {
+    margin-top: 30px;
+}
 
 
 /******** SERVICES-OLD *********/
