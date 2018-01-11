@@ -296,14 +296,14 @@ ol.services>li {
 
 
 /******** SERVICES-OLD *********/
-
+/*
 section#services {
     margin-top: 130px;
 }
-
+*/
 /* div.folder-tabs contains div.folder-tabs and linked to div.folder-content. These control the styling of the folder visuals */
 
-.folder-tab {
+/*.folder-tab {
     width: 29%;
     display: inline-block;
     height: 120px;
@@ -325,32 +325,30 @@ section#services {
     top: 175px;
     left: -5px;
     width: 97%;
-}
+}*/
 
 /*************/
 
 /* Holds content: div.tabs-wrapper contains ul.nav-tabs contains 3x li.nav-item contains a.nav-link contains i.icon and h3.tab-header */
 
-.tabs-wrapper {
+/*.tabs-wrapper {
     z-index: 666;
 }
 
 ul.nav-tabs {
     border-bottom: none;
-}
-
+}*/
+/*
 ul.nav-tabs>li.active,
 ul.nav-tabs>li.active,
 ul.nav-tabs>li.active {
-    /*border: solid 20px transparent;*/
     margin-left: 23px;
     width: 30%;
     border-radius: 4px 4px 0 0;
-/*    background-color: #f9f6f3;*/
     height: 100px;
-}
+}*/
 
-ul.nav-tabs>li.active>a
+/*ul.nav-tabs>li.active>a
 {
     background: #f9f6f3;
     padding: 5px;
@@ -359,15 +357,14 @@ ul.nav-tabs>li.active>a
     border: 3px dashed #fff;
     border-radius: 4px;
     border-bottom: transparent;
-   /* box-shadow: 0 0 0 10px #f9f6f3, 2px 1px 10px 8px rgba(10, 10, 0, 0.5);*/
-}
+}*/
 /*
 ul.nav-tabs>li.active>a:focus,
 ul.nav-tabs>li.active>a:hover {
 
 }*/
 
-li.nav-item {
+/*li.nav-item {
     width: 32.7%;
     z-index: 998;
 }
@@ -382,15 +379,15 @@ li.nav-item>a {
 
 li.nav-item>a.nav-link:hover {
     margin-top: 15px;
-}
+}*/
 
-.nav>li>a:hover {
+/*.nav>li>a:hover {
     border: none!important;
     margin: 0;
     background: #f9f6f3;
 }
-
-.tab-header {
+*/
+/*.tab-header {
     position: relative;
     font-family: 'Amatic SC', cursive;
     font-weight: 700;
@@ -399,17 +396,17 @@ li.nav-item>a.nav-link:hover {
     padding: 0;
     margin: 0 0 30px;
     font-style: none;
-}
+}*/
 
 
-.tab-content {
+/*.tab-content {
     z-index: 998;
     margin: 0 40px 40px;
-}
+}*/
 
-.testimonials.services {
+/*.testimonials.services {
     z-index: -1;
-}
+}*/
 /*
 .dropdown-toggle {
     color: #643513;
@@ -515,6 +512,7 @@ div.logo {
 .navbar-default .navbar-nav>li>a:hover,
 .nav>li>a:hover {
     border: dashed 1.5px rgba(242, 102, 33, 0.5);
+ /*   border: dashed 1.5px #f26621;*/
     border-radius: 6px;
     margin: -1.5px;
     background-color: rgba(249, 246, 243, 0.5);
@@ -724,10 +722,15 @@ img.mobile {
 
 .btn-orange:hover,
 .btn-orange:active {
+    background: #d95b1d;
+    border: 1px solid #f26621;
     opacity: 0.95;
     color: #fff;
+    box-shadow: 2px 2px rgba(225, 225, 225, 1);
 /*    box-shadow: -1px -1px rgba(33, 33, 33, 0.2);*/
 }
+    
+    
 
 .summary-text {
     margin-bottom: 30px;
@@ -1158,6 +1161,11 @@ footer {
     background: #f9f6f3;
     padding: 20px 0 5px 0;
 }
+
+a.btm-contact:hover,
+a.btm-contact:active {
+    color: #f26621;
+} 
 
 /*.footer-contact {
     list-style: none;
