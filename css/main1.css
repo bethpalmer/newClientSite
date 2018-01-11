@@ -1344,6 +1344,9 @@ section.projects {
     padding: 30px 0;
     margin: 10px; 
 }
+.placeholder {
+    background: transparent;
+}
 
 .work-caption {
     background: rgba(242, 102, 33, 0.8);
