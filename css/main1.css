@@ -1046,7 +1046,7 @@ img.work-display {
     background: rgba(242, 102, 33, 0.8);
     position: absolute;
     top: 40px;
-    left: 10px;
+    left: 6px;
     width: 96%;
     height: 96%;
     opacity: 0;
@@ -1329,14 +1329,6 @@ h1.title {
     }
 }
 
-/*@media (max-width: 600px) {
-    .other-work {
-        display: none;
-    }
-    .work-link {
-        display: block;
-    }
-}*/
 
 /* WORK PROJECTS PAGE */
 
@@ -1386,6 +1378,10 @@ img.work-example {
     img.work-example {
         width: 290px;
     }
+}
+
+img.second-img {
+    padding-top: 40px;
 }
 
 /* CONTACT FORM */
