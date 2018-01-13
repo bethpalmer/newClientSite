@@ -72,8 +72,9 @@
             <div class="row">
                 <div class="col-sm-10 col-sm-offset-1">
                     <div class="col-sm-10 col-sm-offset-1 text-center">
-                        <h1 class="title">Web Design Contact Form</h1>
-                        <h2 class="description">Communication is the key to good web design and this form is an opportunity for you to share with me...?.</h2>
+                        <h1 class="title">Web Design</h1>
+                        <h3 class="orange">Contact Form</h3>
+                        <p class="">Communication is key to good web design.<br>Just a few details from you here will really help me to understand your needs and vision, and set the development process off on the right track.</p>
                         <form id="contact-form" method="post" action="contact.php" role="form">
 
                         <div class="messages"></div>
@@ -81,9 +82,14 @@
                         <div class="controls">
 
                             <div class="row">
+                                <div class="col-md-12 text-left">
+                                    <h5 class="blue">First, tell me a bit about yourself</h5>
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="form_name">Firstname *</label>
+                                        <label for="form_name">Name *</label>
                                         <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                                         <div class="help-block with-errors"></div>
                                     </div>
@@ -107,7 +113,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_phone">Phone</label>
-                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone number">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
@@ -115,64 +121,178 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="form_company">Company Name</label>
+                                        <label for="form_company">Company Name *</label>
                                         <input id="form_company" type="text" name="company" class="form-control" placeholder="Please enter your company name *" required="required" data-error="Please enter your company name">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="form_address1">Address 1</label>
-                                        <input id="form_address1" type="text" name="address" class="form-control" placeholder="Please enter the first line of your business address" required="required" data-error="Please enter the first line ofe">
+                                        <label for="form_address1">Address *</label>
+                                        <input id="form_address1" type="text" name="address" class="form-control" placeholder="Please enter your business address *" required="required" data-error="Please enter your address">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_address2">Address 2</label>
-                                        <input id="form_address2" type="text" name="address" class="form-control" placeholder="Please enter the first line of your business address" required="required" data-error="">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_address1">Postcode</label>
-                                        <input id="form_address1" type="text" name="address" class="form-control" placeholder="Please enter the first line of your business address">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
+                                <div class="col-md-12 text-left">
+                                    <h5 class="blue">Tell me a bit about your company</h5>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="form_question1">What does your company do?</label>
-                                        <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please leave us a message."></textarea>
+                                        <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" rows="4" data-error="Please leave us a message."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="form_question2">What's your deadline for this project?</label>
-                                        <textarea id="form_question2" name="question2" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please leave us a message."></textarea>
+                                        <textarea id="form_question2" name="question2" class="form-control" placeholder="Message for me *" data-error="Please leave us a message."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="form_question3">Could you give us a ballpark figure for your available budget for this project?</label>
-                                        <textarea id="form_question3" name="question3" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please leave us a message."></textarea>
+                                        <label for="form_question3">Do you have a ballpark figure budget?</label>
+                                        <textarea id="form_question3" name="question3" class="form-control" placeholder="Message for me *" data-error="Please leave us a message."></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-left">
+                                    <h5 class="blue">Tell me about what you want from this web design project</h5>
+                                </div>
+                            </div>
+                            <div class="row text-left">
+                                <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="form_question1">What does your company do?</label>
-                                        <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
+                                        <label for="form_question1">I want this site because... (tick all that apply)</label>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I want to build awareness of my brand</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I want to offer a contact point for my customers</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I want my company to have a better image online</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I want to sell my product or service through my site</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I want to build customer loyalty</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I need to reach people in many languages</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I want somewhere to promote my latest product / service</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Other reasons</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="form_question1">State reasons:</label>
+                                            <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" rows="4" data-error="Please leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
                                     </div>
-                                </div>              
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_question1">My clients come to me because... (tick all that apply)</label>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I offer excellent servie</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I have the best products on the market</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">I have the best prices on the market</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Other</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="form_question1">State other:</label>
+                                            <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" rows="4" data-error="Please leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>              
+                            <div class="row text-left">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_question1">My site will be to target... (tick all that apply)</label>
+                                        <div class="form-group">
+                                            <label for="form_question1">Age demographic</label>
+                                            <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" data-error="Please leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="form_question1">Gender demographic</label>
+                                            <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" data-error="Please leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="form_question1">Income demographic</label>
+                                            <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" data-error="Please leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="form_question1">Education demographic</label>
+                                            <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" data-error="Please leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="form_question1">Geographic demographic</label>
+                                            <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" data-error="Please leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="form_question1">Occupation demographic</label>
+                                            <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" data-error="Please leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="form_question1">Any other particulars on target audience</label>
+                                            <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" data-error="Please leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_question1">Do you eant to expand your target audience in a particular direction?</label>
+                                       <textarea id="form_question1" name="question1" class="form-control" placeholder="Message for me *" data-error="Please leave us a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                                 <div class="col-md-12">
                                     <input type="submit" class="btn btn-success btn-send" value="Send message">
                                 </div>

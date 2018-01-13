@@ -23,7 +23,7 @@ h1, h3, h4, h5, h6 {
     letter-spacing: 2px;
 }
 
-h2, p {
+h2, p, ol, ul {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     color: #643513;
@@ -1257,6 +1257,10 @@ section.about-me {
 
 .orange {
     color: #f26621;
+}
+
+.blue {
+    color: #5bc6cd;
 }
 
 /* Margin defining where process text shows up on about page - important for anchoring from index link to process */
