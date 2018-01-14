@@ -9,6 +9,7 @@
 body {
     width: 100%;
     height: 100%;
+    color: #643513;
 }
 
 html {
@@ -50,7 +51,7 @@ h5 {
 }
 
 a {
-    color: #777;
+    color: #643513;
 }
 a:hover {
     color: #643513;
@@ -247,14 +248,19 @@ ol.services>li {
     padding: 10px 0;
 }
 
+ol.services {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
 /*i.plus {
     margin: auto;
 }*/
 
 .support-box {
     background: #f9f6f3;
-    height: 350px;
-    font-size: 11px;
+    height: 475px;
+    font-size: 14px;
     width: 90%;
     margin: 0 auto 40px auto;
    /* padding: 0 20px;*/
@@ -262,14 +268,12 @@ ol.services>li {
 
 @media (min-width: 400px) {
     .support-box {
-        font-size: 12px;
-        height: 375px;
+        height: 400px;
         width: 80%;
     }
 }
 @media (min-width: 450px) {
     .support-box {
-        font-size: 14px;
         height: 375px;
         width: 80%;
     }
@@ -306,6 +310,10 @@ section.graphic-design {
 }
 div.extra-top {
     margin-top: 20px;
+}
+
+.cta-btn {
+    margin-top: 30px;
 }
 
 
@@ -579,7 +587,7 @@ section.intro {
 
 .intro h1 {
     font-size: 36px;
-    margin: 20px 0 30px 0;
+    margin: 5px 0 30px 0;
     color: #f26621;
     text-shadow: 2px 2px rgba(33, 33, 33, 0.2);
 }
@@ -593,6 +601,7 @@ section.intro {
 @media (min-width: 768px) {
     .intro h1 {
         font-size: 50px;
+        margin: 20px 0 30px 0;
     }
     .intro h2 {
         font-size: 18px;
@@ -681,6 +690,13 @@ img.mobile {
     box-shadow: 2px 2px rgba(33, 33, 33, 0.2);
 }
 
+
+/*@media screen (min-width: 768px) {
+    a.btn-work {
+        margin-top: 30px;
+    }
+}
+*/
 .btn-animation {
     opacity: 0;
     animation: cta 1s ease-in-out 1.6s 1 normal forwards;
@@ -837,7 +853,7 @@ div.info-box {
         height: 480px;
         width: 27%;
         padding: 0 20px;
-        margin: 0 20px;
+        margin: 40px 20px;
     }
 }
 
@@ -1350,6 +1366,13 @@ section.projects {
 }
 .placeholder {
     background: transparent;
+    display: none;
+}
+
+@media screen (min-width: 768px) {
+    .placeholder {
+        display: inline-block;
+    }
 }
 
 .work-caption {
@@ -1390,6 +1413,7 @@ img.work-example {
 img.second-img {
     padding-top: 40px;
 }
+
 
 /* CONTACT FORM */
 section.contact {
