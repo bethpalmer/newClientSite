@@ -1490,3 +1490,44 @@ form .row:first-child .floating-label-form-group {
     border: 1px solid #643513;
 }
 
+/************** CUSTOM FORMS **************/
+
+h5.form-subtitle {
+    font-size: 24px;
+}
+
+hr.form-hr-subtitle {
+    border: 0;
+    border-bottom: 1px dashed #5bc6cd;
+}
+
+div.form-group>label {
+    color: #5bc6cd;
+    font-weight: 400;
+}
+
+fieldset.check-options {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 20px;
+}
+
+div.form-group>label.label-light {
+    font-weight: 300;
+}
+
+fieldset.check-options>div.form-check>label {
+    color: #5bc6cd;
+    font-weight: 300;
+}
+legend {
+    color: #5bc6cd;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 4px;
+    border-bottom: 0;
+}
+
+div.text-check {
+    margin-top: -20px;
+}
