@@ -14,7 +14,7 @@ $subject = 'New message from web design contact form';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); 
+$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'company' => 'Company Name', 'address1' => 'Address line 1', 'address2' => 'Address line 2', 'city' => 'City', 'postcode' => 'Postcode', 'company-does' => 'What does your company do?', 'usp' => 'What makes your service unique?', 'target-audience' => 'What is your target audience?', 'expand-audience' => 'Do you want to expand your target audience?', 'deadline' => 'What is your project deadline?', 'budget' => 'Do you have a project budget?', 'search' => 'Web search words and phrases:', 'testimonials' => 'Testimonials and proof of excellence:', 'exisiting-logo' => 'Exisiting logo and brand guidelines:', 'training' => 'CMS training?', 'support' => 'Support contract?', 'awareness' => 'Motivation: Awareness', 'contact-point' => 'Motivation: Customer contact point', 'image' => 'Motivation: Online Image', 'sell' => 'Motivation: Sell products / services', 'loyalty' => 'Motivation: Customer loyalty', 'multi-language' => 'Motivation: Multiple languages', 'promote' => 'Motivation: Promote latest product / service', 'other-motivation' => 'Motivation: Other motivation', 'motivation-reason' => 'Motivation: State reason'); 
 
 // message that will be displayed when everything is OK :)
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
