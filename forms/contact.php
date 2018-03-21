@@ -32,20 +32,16 @@ $email_message .= "What is your project deadline? ".clean_string($_POST["deadlin
 $email_message .= "Do you have a project budget? ".clean_string($_POST["budget"])."\n";
 
 $email_message .= "Motivation: ".implode(" ", $_POST['check-motivation'])."\n";
-$email_message .= "Includes: ".implode(" ", $_POST['check-includes'])."\n";
+// $email_message .= "Includes: ".implode(" ", $_POST['check-includes'])."\n";
 $email_message .= "Features: ".implode(" ", $_POST['check-features'])."\n";
 
 $email_message .= "Images: ".clean_string($_POST["who-images"])."\n";
 $email_message .= "Artwork: ".clean_string($_POST["who-artwork"])."\n";
-$email_message .= "Translations: ".clean_string($_POST["who-translations"])."\n";
 $email_message .= "Copy: ".clean_string($_POST["who-copy"])."\n";
 $email_message .= "Logo: ".clean_string($_POST["who-logo"])."\n";
 $email_message .= "Downloads: ".clean_string($_POST["who-downloads"])."\n";
 $email_message .= "Meta: ".clean_string($_POST["who-meta"])."\n";
-$email_message .= "Other: ".clean_string($_POST["who-other"])."\n";
-
-// $contact = $_POST['contact']
-//Will return either "email" or "phone".
+$email_message .= "Translations: ".clean_string($_POST["who-translations"])."\n";
 
 $email_message .= "Web search words and phrases: ".clean_string($_POST["search"])."\n";
 $email_message .= "Testimonials and proof of excellence: ".clean_string($_POST["testimonials"])."\n";
