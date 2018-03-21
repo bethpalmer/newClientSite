@@ -140,8 +140,8 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="form_address1">Address line 2 *</label>
-                                            <input id="form_address2" type="text" name="address2" class="form-control" placeholder="Please enter line 2 of your business address *" required="required" data-error="Please enter your address">
+                                            <label for="form_address1">Address line 2</label>
+                                            <input id="form_address2" type="text" name="address2" class="form-control" placeholder="Please enter line 2 of your business address">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -271,40 +271,40 @@
                                             </fieldset>
                                         </div>
                                     </div>
-                                    <!-- <div class="col-md-6">
+                                    <div class="col-md-6">
                                         <div class="form-group">
-                                            <legend for="include">Our new website would need to include...</legend>
+                                            <legend for="include">My new website needs to include...</legend>
                                             <fieldset id="include" class="check-options">
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="redesign">
-                                                    <label class="form-check-label" for="redesign">Re-design of our current website</label>
+                                                    <input type="checkbox" class="form-check-input" name="check-includes[]" value="redesign" id="redesign">
+                                                    <label class="form-check-label" for="redesign">Redesign of our current website</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="responsive">
+                                                    <input type="checkbox" class="form-check-input"  name="check-includes[]" value="responsive" id="responsive">
                                                     <label class="form-check-label" for="responsive">Responsive design for different screen sizes</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="microsites">
+                                                    <input type="checkbox" class="form-check-input" name="check-includes[]" value="microsites" id="microsites">
                                                     <label class="form-check-label" for="microsites">Separate dedicated landing pages</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="logons">
+                                                    <input type="checkbox" class="form-check-input" name="check-includes[]" value="logons" id="logons">
                                                     <label class="form-check-label" for="logons">Password protected log on areas</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="blog">
+                                                    <input type="checkbox" class="form-check-input" name="check-includes[]" value="blog" id="blog">
                                                     <label class="form-check-label" for="blog">A blog</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="cms">
+                                                    <input type="checkbox" class="form-check-input" name="check-includes[]" value="cms" id="cms">
                                                     <label class="form-check-label" for="cms">A CMS to enable you to edit content</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="social">
+                                                    <input type="checkbox" class="form-check-input" name="check-includes[]" value="social" id="social">
                                                     <label class="form-check-label" for="social">Social network integration</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="include-additional">
+                                                    <input type="checkbox" class="form-check-input" name="check-includes[]" value="include-additional" id="include-additional">
                                                     <label class="form-check-label" for="include-additional">Additional requirements</label>
                                                 </div>
                                                 <div class="form-group text-check">
@@ -315,7 +315,7 @@
                                             </fieldset>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
 
                                 <div class="row">
                                     <div class="col-md-12">
@@ -343,85 +343,113 @@
                                         </div>
                                     </div>
                                 </div>
-                               <!--  <div class="row">
+ 
+
+
+                                <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <legend for="resources">Who will be providing the following resources?</legend>
+
                                             <fieldset id="resources" class="check-options">
+                                                
+                                   <!--              <div class="field form-inline radio">
+                                                  <label class="radio" for="txtContact">Preferred Method of Contact</label>
+                                                  <input class="radio" type="radio" name="contact" value="email" checked /> <span>Email</span>
+                                                  <input class="radio" type="radio" name="contact" value="phone" /> <span>Phone</span>
+                                                </div>
+ -->
+
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="images">
-                                                    <label class="form-check-label" for="images">Images</label>
+                                                    <label class="radio" for="images">Images</label>
+                                                    <input type="radio" type="radio" name="who-images" value="client" id="images" class=""/><span>Client</span>
+                                                    <input type="radio" type="radio" name="who-images" value="designer" id="images" class=""/><span>Designer</span>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="artwork">
-                                                    <label class="form-check-label" for="artwork">Artwork / Illustration</label>
+                                                    <label class="radio" for="artwork">Artwork / Illustration</label>
+                                                    <input type="radio" type="radio" name="who-artwork" value="client" id="artwork" class=""/><span>Client</span>
+                                                    <input type="radio" type="radio" name="who-artwork" value="designer" id="artwork" class=""/><span>Designer</span>           
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="translations">
-                                                    <label class="form-check-label" for="translations">Translations, if necessary</label>
+                                                    <label class="radio" for="translations">Translations, if necessary</label>
+                                                    <input type="radio" type="radio" name="who-translations" value="client" id="translations" class=""/><span>Client</span>
+                                                    <input type="radio" type="radio" name="who-translations" value="designer" id="translations" class=""/><span>Designer</span>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="copy">
-                                                    <label class="form-check-label" for="copy">Copywriting texts</label>
+                                                    <label class="radio" for="copy">Copywriting texts</label>
+                                                    <input type="radio" type="radio" name="who-copy" value="client" id="copy" class=""/><span>Client</span>
+                                                    <input type="radio" type="radio" name="who-copy" value="designer" id="copy" class=""/><span>Designer</span>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="pro-logo">
-                                                    <label class="form-check-label" for="pro-logo">Professional logo</label>
+                                                    <label class="radio" for="logo">Professional logo</label>
+                                                    <input type="radio" type="radio" name="who-logo" value="client" id="logo" class=""/><span>Client</span>
+                                                    <input type="radio" type="radio" name="who-logo" value="designer" id="logo" class=""/><span>Designer</span>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="downloads">
-                                                    <label class="form-check-label" for="downloads">PDF downloads</label>
+                                                    <label class="radio" for="downloads">PDF downloads</label>
+                                                    <input type="radio" type="radio" name="who-downloads" value="client" id="downloads" class=""/><span>Client</span>
+                                                    <input type="radio" type="radio" name="who-downloads" value="designer" id="downloads" class=""/><span>Designer</span>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="meta">
-                                                    <label class="form-check-label" for="meta">Meta tags / descriptions</label>
+                                                    <label class="radio" for="meta">Meta tags / descriptions</label>
+                                                    <input type="radio" type="radio" name="who-meta" value="client" id="meta" class=""/><span>Client</span>
+                                                    <input type="radio" type="radio" name="who-meta" value="designer" id="meta" class=""/><span>Designer</span>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="provide-other">
-                                                    <label class="form-check-label" for="provide-other">Other media</label>
+                                                    <label class="radio" for="provide-other">Other media</label>
+                                                    <input type="radio" type="radio" name="who-other" value="client" id="provide-other" class=""/><span>Client</span>
+                                                    <input type="radio" type="radio" name="who-other" value="designer" id="provide-other" class=""/><span>Designer</span>
                                                 </div>
+
+
+
+
                                             </fieldset>
                                         </div>
-                                    </div> -->
-                                    <!-- <div class="col-md-6">
+                                    </div>
+
+
+
+
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <legend for="features">Which special features do you want on your site</legend>
                                             <fieldset id="features" class="check-options">
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="info-forms">
+                                                    <input type="checkbox" class="form-check-input"  name="check-features[]" value="info-forms" id="info-forms">
                                                     <label class="form-check-label" for="info-forms">Information / request forms</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="streaming">
+                                                    <input type="checkbox" class="form-check-input"  name="check-features[]" value="streaming" id="streaming">
                                                     <label class="form-check-label" for="streaming">Video streaming</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="sign-ups">
+                                                    <input type="checkbox" class="form-check-input"  name="check-features[]" value="sign-ups" id="sign-ups">
                                                     <label class="form-check-label" for="sign-ups">Call to sign up to mailing list</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="cust-login">
+                                                    <input type="checkbox" class="form-check-input"  name="check-features[]" value="cust-login" id="cust-login">
                                                     <label class="form-check-label" for="cust-login">Customer login</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="shop">
+                                                    <input type="checkbox" class="form-check-input"  name="check-features[]" value="shop" id="shop">
                                                     <label class="form-check-label" for="shop">Online store / shopping cart</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="payments">
+                                                    <input type="checkbox" class="form-check-input"  name="check-features[]" value="payments" id="payments">
                                                     <label class="form-check-label" for="payments">Online payment gateway</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="gallery">
+                                                    <input type="checkbox" class="form-check-input"  name="check-features[]" value="gallery" id="gallery">
                                                     <label class="form-check-label" for="gallery">Image gallery</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" id="features-other">
+                                                    <input type="checkbox" class="form-check-input"  name="check-features[]" value="features-other" id="features-other">
                                                     <label class="form-check-label" for="features-other">Other features</label>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                                         <div class="row">
                                             <div class="col-md-6">
