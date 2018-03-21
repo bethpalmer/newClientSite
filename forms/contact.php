@@ -5,7 +5,7 @@ if(isset($_POST['email'])) {
 
 // EDIT THE 2 LINES BELOW AS REQUIRED
 $email_to = "bethpalmerdesigns@gmail.com";
-$email_subject = "Contact form";
+$email_subject = "Website contact form";
 $email_from = "website@bethpalmer.co.uk";
 
 $email_message = "Form details below.\n\n";
@@ -102,7 +102,7 @@ catch (\Exception $e)
 // }
 // else just display the message
 // else {
-    echo $responseArray['message'];
+    // echo $responseArray['message'];
 // }
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
@@ -120,9 +120,9 @@ mail($email_to, $email_subject, $email_message, $headers);
 <br>
  <a href="index.html">HOME</a></center> -->
 
-<?php
+<!--<?php
 }
-?>
+?> -->
 
 
 
