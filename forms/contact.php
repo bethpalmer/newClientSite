@@ -51,66 +51,70 @@ $email_message .= "Support contract? ".clean_string($_POST["support"])."\n";
 
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+// $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+// $errorMessage = 'There was an error while submitting the form. Please try again later';
 
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
-error_reporting(E_ALL & ~E_NOTICE);
+// error_reporting(E_ALL & ~E_NOTICE);
 
-try
-{
+// try
+// {
 
-    if(count($_POST) == 0) throw new \Exception('Form is empty');
+//     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "You have a new message from your contact form\n=============================\n";
+//     $emailText = "You have a new message from your contact form\n=============================\n";
 
-    foreach ($_POST as $key => $value) {
+//     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
-        if (isset($fields[$key])) {
-            $emailText .= "$fields[$key]: $value\n";
-            $emailText .= "'Motivations: '. $selectedMotivations";
-        }
-    }
+    //     if (isset($fields[$key])) {
+    //         $emailText .= "$fields[$key]: $value\n";
+    //         $emailText .= "'Motivations: '. $selectedMotivations";
+    //     }
+    // }
 
     // All the neccessary headers for the email.
-    $headers = array('Content-Type: text/plain; charset="UTF-8";',
-        'From: ' . $from,
-        'Reply-To: ' . $from,
-        'Return-Path: ' . $from,
-    );
+    // $headers = array('Content-Type: text/plain; charset="UTF-8";',
+    //     'From: ' . $from,
+    //     'Reply-To: ' . $from,
+    //     'Return-Path: ' . $from,
+    // );
     
     // Send email
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
-
-    $responseArray = array('type' => 'success', 'message' => $okMessage);
+    header("Location:../services.html");
 }
-catch (\Exception $e)
-{
-    $responseArray = array('type' => 'danger', 'message' => $errorMessage);
+else{header("Location:../work.html");
+?><?php
 }
+?>
+
+<!--      $responseArray = array('type' => 'success', 'message' => $okMessage);
+ }
+ catch (\Exception $e)
+ {
+     $responseArray = array('type' => 'danger', 'message' => $errorMessage);
+ }
 
 
-// if requested by AJAX request return JSON response
-// if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-//     $encoded = json_encode($responseArray);
+ if requested by AJAX request return JSON response
+ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+     $encoded = json_encode($responseArray);
 
-//     header('Content-Type: application/json');
+     header('Content-Type: application/json');
 
-//     echo $encoded;
-// }
-// else just display the message
-// else {
-    // echo $responseArray['message'];
-// }
-// create email headers
+     echo $encoded;
+ }
+ else just display the message
+ else {
+     echo $responseArray['message'];
+ }
+ create email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-mail($email_to, $email_subject, $email_message, $headers); 
-?>
-
+mail($email_to, $email_subject, $email_message, $headers);  -->
 <!-- include your own success html here -->
 <!-- <center>
 <img src="images/logo.png" />
@@ -123,7 +127,3 @@ mail($email_to, $email_subject, $email_message, $headers);
 <!--<?php
 }
 ?> -->
-
-
-
-
