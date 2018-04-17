@@ -81,8 +81,8 @@
                 <div class="col-sm-10 col-sm-offset-1">
                     <div class="col-sm-10 col-sm-offset-1 text-center">
 
-                        <form id="cf-web-design" method="post" action="contact.php" class="text-left">
-                            <div class="messages"></div>
+                        <form id="contact-form" method="post" action="contact.php" class="text-left">
+                            <!-- <div class="messages"></div> -->
                             <div class="controls">
                                 <hr class="form-hr-subtitle">
                                 <h5 class="blue form-subtitle">A bit about yourself</h5>
@@ -92,14 +92,14 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="form_name">Name *</label>
-                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <input id="form_name" type="text" name="first-name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="Firstname is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="form_lastname">Lastname *</label>
-                                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                            <input id="form_lastname" type="text" name="last-name" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Lastname is required.">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -109,7 +109,7 @@
                                         <div class="form-group">
                                             <label for="form_email">Email *</label>
                                             <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                            <small id="email" class="form-text text-muted">We won't share your information with anyone else</small>
+                                            <small id="email" class="form-text text-muted">Don't worry, we won't share your information with anyone else</small>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -141,21 +141,20 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="form_address1">Address line 2</label>
-                                            <input id="form_address2" type="text" name="address2" class="form-control" placeholder="Please enter the second line of your address">
-                                            <!-- <div class="help-block with-errors"></div> -->
+                                            <input id="form_address2" type="text" name="address2" class="form-control" placeholder="Enter the second line of your address">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="form_address1">City *</label>
-                                            <input id="form_address3" type="text" name="city" class="form-control" placeholder="Please enter your city *" required="required" data-error="Please enter your city">
+                                            <input id="form_address3" type="text" name="city" class="form-control" placeholder="Enter your city *" required="required" data-error="Please enter your city">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="form_address1">Postcode *</label>
-                                            <input id="form_address4" type="text" name="postcode" class="form-control" placeholder="Please enter your postcode *" required="required" data-error="Please enter your postcode">
+                                            <input id="form_address4" type="text" name="postcode" class="form-control" placeholder="Enter your postcode *" required="required" data-error="Please enter your postcode">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -171,48 +170,56 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="company-does">What does your company do?</label>
-                                            <textarea id="company-does" name="company-does" class="form-control" placeholder="Please enter a brief overview of what your company does" rows="4"></textarea>
-                                          <!--   <div class="help-block with-errors"></div> -->
+                                            <textarea id="company-does" name="company-does" class="form-control" placeholder="Enter a brief overview of what your company does" rows="4"></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="usp">What is it that makes your services unique on the market?</label>
-                                            <textarea id="usp" name="usp" class="form-control" placeholder="Please list out your USPs" rows="4"></textarea>
-                                            <!-- <div class="help-block with-errors"></div> -->
+                                            <label for="usp">What is it that makes you unique in your market?</label>
+                                            <textarea id="usp" name="usp" class="form-control" placeholder="List your USPs" rows="4"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="target-audience">Describe the target audience of your company</label>
+                                            <label for="target-audience">Who is your target audience?</label>
                                             <textarea id="target-audience" name="target-audience" class="form-control" placeholder="Describe your target audience" rows="3"></textarea>
                                             <small id="target" class="form-text text-muted">Age, gender, income category, education, location, occupation etc.</small>
-                                          <!--   <div class="help-block with-errors"></div> -->
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="expand-audience">Do you want to expand your target audience in a particular direction?</label>
                                             <textarea id="expand-audience" name="expand-audience" class="form-control" placeholder="Please detail who you would like to expand your target audience to include"></textarea>
-                                         <!--    <div class="help-block with-errors"></div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="existing-site">Do you have an existing site?</label>
+                                            <textarea id="existing-site" name="existing-site" class="form-control" placeholder="Enter the web address of your existing site" rows="1"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="existing-site-analysis">Is there anything you particularly like, or dislike about your existing site?</label>
+                                            <textarea id="existing-site-analysis" name="existing-site-analysis" class="form-control" placeholder="List the things you love, or hate, about your existing site" rows="4"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="deadline">What is your deadline for this project?</label>
+                                            <label for="deadline">Do you have a deadline for this project?</label>
                                             <textarea id="deadline" name="deadline" class="form-control" placeholder="Please enter your deadline"></textarea>
-                                            <!-- <div class="help-block with-errors"></div> -->
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="budget">Do you have a ballpark figure budget for this project?</label>
                                             <textarea id="budget" name="budget" class="form-control" placeholder="Please enter your budget"></textarea>
-                                           <!--  <div class="help-block with-errors"></div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -227,8 +234,8 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             
-                                            <!-- .check-options styles the border around the answers for this question -->
-                                            <legend for="motivation">The main motivations for my new site are to...</legend>
+                                            <!-- Class check-options styles the border around the answers for this question -->
+                                            <legend for="motivation">What are your main motivations for your new site?</legend>
                                             <fieldset id="motivation" class="check-options">
                                                 <div class="form-check">
                                                     <input type="checkbox" class="form-check-input" name="check-motivation[]" value="legitimise" id="legitimise">
@@ -239,10 +246,6 @@
                                                     <label class="form-check-label" for="contact-point">Provide a contact point for customers</label>
                                                 </div>
                                                 <div class="form-check">
-                                                    <input type="checkbox" class="form-check-input" name="check-motivation[]" value="awareness" id="awareness">
-                                                    <label class="form-check-label" for="awareness">Build awareness of my brand</label>
-                                                </div>
-                                                <div class="form-check">
                                                     <input type="checkbox" class="form-check-input" name="check-motivation[]" value="image" id="image">
                                                     <label class="form-check-label" for="image">Improve our image online</label>
                                                 </div>
@@ -251,12 +254,24 @@
                                                     <label class="form-check-label" for="loyalty">Build customer loyalty</label>
                                                 </div>
                                                 <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" name="check-motivation[]" value="social" id="social">
+                                                    <label class="form-check-label" for="social">A hub for our social media accounts</label>
+                                                </div>
+                                                <div class="form-check">
                                                     <input type="checkbox" class="form-check-input" name="check-motivation[]" value="sell" id="sell">
                                                     <label class="form-check-label" for="sell">Sell my product or service</label>
                                                 </div>
                                                 <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" name="check-motivation[]" value="member" id="member">
+                                                    <label class="form-check-label" for="member">Provide a personalised log on area for clients</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" name="check-motivation[]" value="mailing-list" id="mailing-list">
+                                                    <label class="form-check-label" for="mailing-list">Sign people up to our mailing list</label>
+                                                </div>
+                                                <div class="form-check">
                                                     <input type="checkbox" class="form-check-input" name="check-motivation[]" value="promote" id="promote">
-                                                    <label class="form-check-label" for="promote">Promote my latest offering</label>
+                                                    <label class="form-check-label" for="promote">Promote our latest offering</label>
                                                 </div>
                                                 <div class="form-check">
                                                     <input type="checkbox" class="form-check-input" name="check-motivation[]" value="educate" id="educate">
@@ -264,7 +279,7 @@
                                                 </div>
                                                 <div class="form-check">
                                                     <input type="checkbox" class="form-check-input" name="check-motivation[]" value="hub" id="hub">
-                                                    <label class="form-check-label" for="hub">Serve as a hub of useful information / links</label>
+                                                    <label class="form-check-label" for="hub">A hub of useful information / links</label>
                                                 </div>
                                                 <div class="form-check">
                                                     <input type="checkbox" class="form-check-input" name="check-motivation[]" value="multi-language" id="multi-language">
@@ -276,8 +291,7 @@
                                                 </div>
                                                 <div class="form-group text-check">
                                                     <label for="motivation-reason" aria-label="Other reasons"></label>
-                                                    <textarea id="motivation-reason" name="check-motivation[]" class="form-control" placeholder="Please enter other motivations for your new site" rows="2"></textarea>
-                                                 <!--    <div class="help-block with-errors"></div> -->
+                                                    <textarea id="motivation-reason" name="check-motivation[]" class="form-control" placeholder="Note other motivations" rows="2"></textarea>
                                                 </div>
                                             </fieldset>
                                         </div>
@@ -326,7 +340,7 @@
                                             </fieldset>
                                         </div>
                                     </div> -->
-                                    <div class="col-md-6">
+                                 <!--    <div class="col-md-6">
                                         <div class="form-group">
                                             <legend for="features">Which special features do you want on your site</legend>
                                             <fieldset id="features" class="check-options">
@@ -385,44 +399,52 @@
                                                 <div class="form-group text-check">
                                                     <label for="features-other" aria-label="Other features"></label>
                                                     <textarea id="features-other" name="check-features[]" value"features-other-text" class="form-control" placeholder="Please state any other required features"></textarea>
-                                               <!--      <div class="help-block with-errors"></div> -->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12">
+                             </div> -->
+                               <!--  <div class="row"> -->
+                                    <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="search">What phrases or words would someone use to search the web for your business?</label>
-                                            <textarea id="search" name="search" class="form-control" placeholder="What specific search terms are relevant to your business" rows="4"></textarea>
-                                       <!--      <div class="help-block with-errors"></div> -->
+                                            <label for="features">What special features, if any, will your website require?</label>
+                                            <textarea id="features" name="features" class="form-control" placeholder="List any desired special features for your website" rows="4"></textarea>
+                                            <small id="target" class="form-text text-muted">Blog, video streaming, quote calculator, contact form etc.</small>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="search">What phrases or words would someone use to search for you online?</label>
+                                            <textarea id="search" name="search" class="form-control" placeholder="List as many relevant search terms as you can think of" rows="10"></textarea>
+                                        </div>
+                                    </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="testimonials">Do you have any client testimonials or other proof of excellence to use on your site?</label>
-                                            <textarea id="testimonials" name="testimonials" class="form-control" placeholder="Do you have any proof of excellence? If so what type"></textarea>
+                                            <textarea id="testimonials" name="testimonials" class="form-control" placeholder="List any useful promotional resources you have / are able to get" rows="4"></textarea>
                                             <small id="target" class="form-text text-muted">Testimonials, accreditations etc.</small>
-                                            <!-- <div class="help-block with-errors"></div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exisiting-logo">Are you happy with your exisiting logo / branding / style guide?</label>
+                                            <textarea id="exisiting-logo" name="exisiting-logo" class="form-control" placeholder="Note any thoughts you have on your exisiting branding" rows="3"></textarea>
+                                            <small id="target" class="form-text text-muted">Colours, fonts, style etc.</small>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="exisiting-logo">Are you happy with your exisiting logo / branding / style guide?</label>
-                                            <textarea id="exisiting-logo" name="exisiting-logo" class="form-control" placeholder="Do you have / intend to keep your existing logo and branding?"></textarea>
-                                            <small id="target" class="form-text text-muted">Colours, fonts, style etc.</small>
-                                <!--             <div class="help-block with-errors"></div> -->
+                                            <label for="copy">Who will create the content and copy for your new website?</label>
+                                            <textarea id="copy" name="copy" class="form-control" placeholder="Note any thoughts you have on copy and content creation" rows="3"></textarea>
                                         </div>
                                     </div>
                                 </div>
  
 
 
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <legend for="resources">Who will be providing the following resources?</legend>
@@ -534,20 +556,18 @@
                                         </div>
                                     </div>
                                     
-                                </div>
+                                </div> -->
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label for="training">Would you like to book a dedicated training session to learn how to update the site?</label>
-                                                    <textarea id="training" name="training" class="form-control" placeholder="Will you need CMS training to be provided?" rows="4"></textarea>
-                                            <!--         <div class="help-block with-errors"></div> -->
+                                                    <label for="CMS">Will you need a CMS to allow you to make your own content edits to the site?</label>
+                                                    <textarea id="CMS" name="CMS" class="form-control" placeholder="Note any requirement or preference on content management systems" rows="4"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="support">Will you be taking on post-launch support to keep the site relevant and up-to-date?</label>
-                                                    <textarea id="support" name="support" class="form-control" placeholder="Please indicate if you intend to keep your site supported moving forwards" rows="4"></textarea>
-                                                    <!-- <div class="help-block with-errors"></div> -->
+                                                    <textarea id="support" name="support" class="form-control" placeholder="Indicate if you intend to keep your site supported moving forwards" rows="4"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -556,11 +576,8 @@
                                                 <input type="submit" class="btn btn-success btn-send" value="Send message">
                                             </div>
                                         </div>
-                                        <!-- <div class="row">
-                                            <div class="col-md-12">
-                                                <p class="text-muted"><strong>*</strong> These fields are required.</p>
-                                            </div>
-                                        </div> -->
+                                        <!-- div to display success / failure message after submit --> 
+                                        <div class="messages style-message"></div>
                                     </div>
                                 </div>
                             </div>

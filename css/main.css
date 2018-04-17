@@ -1509,7 +1509,11 @@ div.form-group>label {
 fieldset.check-options {
     border: 1px solid #ccc;
     background: #fff;
-    padding: 20px;
+    padding: 10px 20px;
+}
+
+textarea#motivation-reason {
+    margin-top: 15px; 
 }
 
 div.form-group>label.label-light {
@@ -1557,4 +1561,9 @@ td {
     border: none!important;
     margin-bottom: 0;
     padding: 0!important;
+}
+
+/* Form success msg styling */
+div.style-message {
+    margin-top: 20px;
 }
