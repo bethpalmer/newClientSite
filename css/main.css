@@ -1533,9 +1533,9 @@ tr.resources-header>th {
 }
 
 /* For client / designer radio box styling */
-fieldset#resources {
+/*fieldset#resources {
     padding-bottom: 0;
-}
+}*/
 
 legend {
     color: #5bc6cd;
@@ -1548,10 +1548,6 @@ legend {
 div.text-check {
     margin-top: -20px;
 }
-/*div.form-group>small.form-text {
-    margin-top: -20px;
-}
-*/
 
 input[type=checkbox], input[type=radio] {
     margin: 15px 15px 0;
