@@ -1,7 +1,4 @@
 <?php
-/*
- *  CONFIGURE EVERYTHING HERE
- */
 
 // an email address that will be in the From field of the email.
 $from = 'Demo contact form <website@bethpalmerdesigns.com>';
@@ -43,13 +40,13 @@ $fields = array(
 $extra = "Motivation: ".implode(" ", $_POST['check-motivation'])."\n";
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+$okMessage = 'Thank you. I appreciate your time. This information should be really useful in informing the quoting and development process. I will be in touch with you soon!';
 
 // If something goes wrong, we will display this message.
-$errorMessage = 'There was an error while submitting the form. Please try again later';
+$errorMessage = "Uh-oh, looks like there's been some kind of error. I'm so sorry. If the problem persists could you be a darling and let me know on 07523257537? Thank you.";
 
 /*
- *  LET'S DO THE SENDING
+ *  The SENDING bit
  */
 
 // if you are not debugging and don't need error reporting, turn this off by error_reporting(0);
