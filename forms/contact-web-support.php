@@ -7,7 +7,7 @@ $from = 'Demo contact form <website@bethpalmerdesigns.com>';
 $sendTo = 'Demo contact form <bethpalmerdesigns@gmail.com>';
 
 // subject of the email
-$subject = 'New message from contact form';
+$subject = 'WEB SUPPORT CONTACT from website';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
@@ -21,26 +21,21 @@ $fields = array(
     'address2' => 'Address 2',
     'city' => 'City',
     'postcode' => 'Postcode',
-    'company-does' => 'Line of business',
-    'usp' => 'USPs',
-    'target-audience' => 'Target audience',
-    'expand-audience' => 'Expand target audience',
     'existing-site' => 'Existing site',
-    'existing-site-analysis' => 'Existing site analysis',
-    'deadline' => 'Project deadline',
-    'budget' => 'Project budget',
-    'features' => 'Special features',
-    'search' => 'Search terms',
-    'testimonials' => 'Proof of excellence',
-    'exisiting-logo' => 'Exisiting logo',
-    'copy' => 'Copy',
-    'CMS' => 'CMS',
-    'support' => 'Support'); 
-
-$extra = "Motivation: ".implode(" ", $_POST['check-motivation'])."\n";
+    'existing-support' => 'Details on current support:',
+    'existing-hosting' => 'Exisiting site host',
+    'domain-email' => 'How many domain emails do you have?',
+    'platform' => 'What platform is your existing site on',
+    // 'database' => 'Do you have an integrated database',
+    'requirements' => 'What requirements do you have?',
+    'happy-with-site' => 'Are you happy with your existing site?',
+    'SEO' => 'Interested in SEO?',
+    'analytics-modifications' => 'Interested in analytics modifications',
+    'marketing-campaigns' => 'Interested in PPC advertising',
+    'source-support' => 'How contact found me');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Thank you. I appreciate your time. This information should be really useful in informing the quoting and development process. I will be in touch with you soon!';
+$okMessage = 'Thank you. I appreciate your time. This information will be really useful in informing the process moving forwards. I will be in touch with you soon!';
 
 // If something goes wrong, we will display this message.
 $errorMessage = "Uh-oh, looks like there's been some kind of error. I'm so sorry. If the problem persists could you be a darling and let me know on 07523257537? Thank you.";
@@ -57,17 +52,13 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "You have a new message from your contact form\n=============================\n";
+    $emailText = "New message from WEB SUPPORT contact form\n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
         if (isset($fields[$key])) {
             $emailText .= "$fields[$key]: $value\n";
         }
-    }
-
-    if (isset($extra)) {
-        $emailText .= "$extra";
     }
 
     // All the neccessary headers for the email.

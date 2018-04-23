@@ -77,7 +77,7 @@ if(isset($_POST['email'])) {
   $email_message .= "Support contract? ".clean_string($_POST["support"])."\n";
 
   // message that will be displayed when everything is OK :)
-  $ok_message = 'Thank you. I appreciate your time. This information should be really useful in informing the development process. I will be in touch with you soon!';
+  $ok_message = 'Thank you. I appreciate your time. This information should be really useful in informing the quoting and development process. I will be in touch with you soon!';
 
   // If something goes wrong, we will display this message.
   $error_message = "Uh-oh, looks like there's been some kind of error. I'm so sorry. If the problem persists could you give me a call on 07523257537? Thank you.";
